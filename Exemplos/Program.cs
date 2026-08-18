@@ -1,7 +1,13 @@
 ﻿using Exemplos.fixacao;
+using Exemplos.Salario;
 
-Console.Write("Informe a medida em metros: ");
-int metros = int.Parse(Console.ReadLine());
-int milimetros = metrosMilimetros.Converter(metros);
+AumentoSalarial aumentoSalarial= new AumentoSalarial();
 
-Console.WriteLine(");
+Console.WriteLine("Informe o salario: ");
+double s = double.Parse(Console.ReadLine());
+Console.WriteLine("informe o percentual de aumento: ");
+double p = double.Parse(Console.ReadLine());
+
+Console.WriteLine($"Salario antigo: {s}");
+Console.WriteLine($"Salario novo: {aumentoSalarial.aumentoSalario(s,p)}");
+Console.WriteLine($"Salario aumento: {aumentoSalarial.valorAumento(s,p)}");
