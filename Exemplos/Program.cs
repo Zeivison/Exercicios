@@ -1,13 +1,14 @@
 ﻿using Exemplos.fixacao;
 using Exemplos.Salario;
+using Exemplos.desconto;
 
-AumentoSalarial aumentoSalarial= new AumentoSalarial();
+CalculaDesconto calculaDesconto= new CalculaDesconto();
 
-Console.WriteLine("Informe o salario: ");
+Console.WriteLine("Informe o valor do produto: ");
 double s = double.Parse(Console.ReadLine());
-Console.WriteLine("informe o percentual de aumento: ");
+Console.WriteLine("informe o percentual de desconto: ");
 double p = double.Parse(Console.ReadLine());
 
-Console.WriteLine($"Salario antigo: {s}");
-Console.WriteLine($"Salario novo: {aumentoSalarial.aumentoSalario(s,p)}");
-Console.WriteLine($"Salario aumento: {aumentoSalarial.valorAumento(s,p)}");
+Console.WriteLine($"Valor antigo: {s}");
+Console.WriteLine($"Valor novo: {calculaDesconto.descontoProd(s,p)}");
+Console.WriteLine($"Valor desconto: {calculaDesconto.valorDesconto(s,p)}");
