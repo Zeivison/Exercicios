@@ -1,3 +1,5 @@
+using Exemplos.fixacao;
+
 namespace TesteExemplosCSharp;
 
 [TestClass]
@@ -6,14 +8,15 @@ public class TesteCalculaFatorial
     [TestMethod]
     public void TestMethod1()
     {
+        CalcularFatorial calc = new CalcularFatorial();
         //cenario
         int num = 3;
-        int fatorialCalculada;
+        
 
         //ação
-        calculaFatorial = CalcularFatorial.CalculaFatorial(num);
+        int calculaFatorial = calc.CalculaFatorial(num);
 
         //verificação
-        Assert.AreEqual(fatorialCalculada, 6);
+        Assert.AreEqual(calculaFatorial, 6);
     }
 }
