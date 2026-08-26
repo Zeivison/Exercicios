@@ -4,17 +4,17 @@ using System.Text;
 
 namespace Exemplos.Salario
 {
-    internal class AumentoSalarial
+    public class AumentoSalarial
     {
-        public double aumentoSalario(double salario, double percentual)
+        public decimal aumentoSalario(decimal salario, float percentual)
         {
-            double pAumento = salario * (percentual / 100);
+            decimal pAumento = salario * ((decimal)percentual / 100);
             return pAumento+salario;
         }
 
-        public double valorAumento(double salario, double percentual)
+        public decimal valorAumento(decimal salario, float percentual)
         {
-            double pAumento = salario * (percentual / 100);
+            decimal pAumento = salario * ((decimal)percentual / 100);
             return pAumento;
         }
     }

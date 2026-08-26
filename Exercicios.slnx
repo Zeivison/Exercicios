@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Exemplos/Exemplos.csproj" />
+  <Project Path="TesteExemplosCSharp/TesteExemplosCSharp.csproj" Id="40c83585-257e-4b38-aab4-08cc910d74ed" />
 </Solution>
